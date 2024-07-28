@@ -1,4 +1,22 @@
 # Updates
+## 28/07/2024 SipeP
+- Set Region and language settings
+- Set TimeZone to Central Europe Standard Time
+- Removed Edge removal
+- Added Johny_Winget_Install.ps1 script to Desktop that will install all my apps
+- Added reg keys that wil match classic titlebar to Dark Mode
+- Disabled: "Sets Windows Update to Only Install Security Updates and Delay Other Updates for 2 Years"
+- Disabled: "Deletes Microsoft Edge Registry Entries"
+- Disabled: "On Shutdown, Windows will automatically close any running applications"
+- Excluded (commented out) some apps from remove-packages.ps1 & remove-caps.ps1 scripts:
+  - Calculator
+  - Notepad
+  - Paint
+  - Terminal
+  - Your Phone
+  - Edge
+  - MS Store
+
 ## 24/7/2024
 *These Updates apply to ALL Versions*
 
@@ -23,6 +41,8 @@ reg.exe add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d 
 
 ### Removed
 Completely Removed `defaultuser.cmd` - It doesn't work as intended, registry settings are applied to user accounts via the `currentuser.cmd` script.
+
+
 
 ## 8/7/2024
 *These Updates apply to the Standard and IoT-LTSC-Like Versions*
